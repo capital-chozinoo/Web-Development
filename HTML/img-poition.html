@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            overflow: hidden;
+        }
+
+        .container {
+            width: 70%;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        .nature {
+            width: 100%;
+            opacity: 0.7;
+            height: 40vh;
+            object-fit: cover;
+            transform:
+                opacity 0.5s,
+                transform 0.5s;
+
+        }
+
+        .nature:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        .img-container{
+            position: relative;
+        }
+        h2{
+            margin: 0;
+        }
+        .img-container .title{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            color:#fff;
+            padding:5px 10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+        
+            <li class="img-container"> 
+                    <h2 class="title">Nature</h2>
+                    <img class="nature"
+                    src="https://plus.unsplash.com/premium_photo-1697778137575-e739b2591416?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ2fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+                    alt="img1" />
+
+            </li>
+            <li class="img-container">
+                            <h2 class="title">Flower</h2>
+
+                <img class="nature"
+                    src="https://plus.unsplash.com/premium_photo-1711434824963-ca894373272e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww"
+                    alt="img2" />
+            </li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
