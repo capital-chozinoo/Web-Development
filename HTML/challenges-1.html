@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,500;1,500&display=swap"
+    rel="stylesheet">
+  <style>
+    .container {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 300px;
+      border: 0.11px solid lightgray;
+      border-radius: 10px;
+    }
+
+    .container {
+      div {
+        width: 50%;
+        height: 100%;
+      }
+
+    }
+
+    .item1 {
+      overflow: hidden;
+
+      img {
+        background-color: #000;
+        max-width: 100%;
+        display: block;
+        object-fit: contain;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    img {
+      margin: 0;
+      padding: 0;
+    }
+
+    .item2 {
+      margin-left: 10px;
+    }
+
+    .item2 h2:nth-of-type(1) {
+      font-size: 15px;
+      font-family: sans-serif;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      opacity: 0.5;
+    }
+
+    .item2 h2:nth-of-type(2) {
+      font-size: 30px;
+      font-family: "Fraunces";
+      line-height: 70%;
+      margin-bottom: 20px;
+
+    }
+
+    .item2 p {
+      font-size: 10px;
+      font-family: "Fraunces";
+      margin-bottom: 20px;
+    }
+
+    .price-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 40px;
+    }
+
+    .price {
+      font-family: "Montserrat";
+      color: #7A7B83;
+      font-size: .5em;
+      text-decoration: line-through;
+    }
+
+    .price-info .discount-price {
+      font-family: "Fraunces";
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #41826A;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 10px;
+      background-color: #1A4031;
+      font-family: "Montserrat";
+      color: white;
+      font-size: .8em;
+      width: 80%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item1">
+      <img
+        src="https://github.com/HtunAungKyaw73/frontend-mentor-challenges-1/blob/main/images/image-product-desktop.jpg?raw=true"
+        alt="img1">
+    </div>
+    <div class="item2">
+      <h2>Perfume</h2>
+      <h2>Garbrielle Essence Eau De Parfum<h2>
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.</p>
+
+          <div class="price-info">
+            <div class="discount-price">$149.99</div>
+            <div class="price">$169.99</div>
+          </div>
+          <button class="btn"><i class="icon fa-solid fa-cart-shopping"></i>Add to Cart</button>
+    </div>
+  </div>
+</body>
+
+</html>
